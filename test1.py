@@ -1,7 +1,7 @@
-from mininet.topo import Topo
+ from mininet.topo import Topo
 
 class MyTopo( Topo ):
-    "Simple topology example."
+    "Experiment 1 topology."
 
     def __init__( self ):
         "Create custom topo."
@@ -27,7 +27,7 @@ class MyTopo( Topo ):
         Switchsix = self.addSwitch( 's6' )
         Switchseven = self.addSwitch( 's7' )
 
-        # Add links
+        # Add links 按照实验给的拓扑图将switch与host以及switch与switch之间连接起来
         self.addLink( Hostone, Switchfour )
         self.addLink( Hosttwo, Switchfour )
         self.addLink( Hostthree, Switchfive )
